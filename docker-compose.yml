@@ -1,0 +1,26 @@
+version: '3'
+services:
+  web-login:
+    build:
+      context: .
+      dockerfile: ./Docker/login/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./apps:/apps
+    environment:
+      FLASK_ENV: development
+      LAB_5_SECRET: $LAB_5_SECRET
+  web-files:
+    build:
+      context: .
+      dockerfile: ./Docker/files/Dockerfile
+    ports:
+      - "81:81"
+    volumes:
+      - ./apps:/apps
+    environment:
+      FLASK_ENV: development
+      LAB_5_SECRET: $LAB_5_SECRET
+  redis:
+    image: "redis:alpine"

@@ -1,0 +1,23 @@
+@import "style.css";
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	caption-side: bottom;
+	
+}
+
+table, tr, td {
+	border: 3px solid rgb(70, 70, 70);
+	border-collapse: collapse;
+}
+
+
+td:nth-child(odd) {
+	background-color: #ffdd9d;
+}
+
+td:nth-child(even) {
+	background-color: #b3b4ff;
+}
+

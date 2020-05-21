@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Bib --> Homepage </title>
+	<link href="styles/index_style.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="attachments/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:800i|Roboto:100,400&display=swap&subset=latin-ext&effect=shadow-multiple|anaglyph"
+		rel="stylesheet" type="text/css">
+</head>
+
+<nav>
+	<ul>
+		<h3>
+			<li><img class="resize" src="{{ url_for('static', filename='attachments/favicon1.png')}}" ></li>
+			<li><a href="{{ url_for('index')}}">Home</a></li>
+			<li><a href="{{ url_for('add_article')}}">Add</a></li>
+			<li><a href="{{ url_for('show_articles')}}">List</a></li>
+			<li><a href="{{ url_for('logout')}}">Log out</a></li>
+			<li><a href="{{ url_for('login')}}">Log in</a></li>
+			<li><a href="{{ url_for('register')}}">Register</a></li>
+			<li><a href="{{ url_for('change_password')}}">Zmiana hasła</a></li>
+		</h3>
+	</ul>
+</nav>
+
+<body>
+	<header>
+		<h1 class="font-effect-shadow-multiple"> Witaj w systemie Bib</h1>
+	</header>
+	<article>
+		<section>
+			<h3> Aktualnie dostępne pliki </h3>
+			<table>
+				<thead>
+					<tr>
+						<td>Lp.</td>
+						<td>Nazwa</td>
+					</tr>
+				</thead>
+				<tbody>
+					{% for key, value in my_files.items() %}
+					<tr>
+						<td>{{ value }}</td>
+						<td><a href="/article-manager/{{ key }}" target="blank" download><button>Pobierz</button></a>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</section>
+	</article>
+</body>
+<footer>
+	<p>&copy Jakub Przygodzki, 285643 </p>
+</footer>
+
+</html>

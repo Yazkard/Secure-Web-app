@@ -1,0 +1,96 @@
+body {
+    
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-image: repeating-radial-gradient(circle, rgb(216, 216, 216), rgb(255, 255, 255));
+}
+body header {
+    padding-top: 70px;
+}
+
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    
+    margin: 0;
+    padding-left: 20px;
+    background-color: rgb(87, 87, 87);
+    
+}
+
+nav ul li {
+    display: inline;
+}
+
+img.resize {
+    padding-top: 5px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    width: 115px;
+    height: 50px;
+    vertical-align: center;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    background-color: #ffe06e;
+}
+
+nav li p {
+    font-family: 'Barlow Condensed', Black Italic;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(87, 87, 87);
+    max-width: inherit;
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    color: white;
+}
+
+section h3 {
+    color: rgb(255, 255, 255);
+}
+
+article {
+    max-width: 50%;
+    padding-left:25%;
+}
+article h3 {
+    padding-left: 5%;
+    padding-right:5%;
+    color: rgb(63, 63, 63);
+    font-family: 'Barlow Condensed', Black Italic;
+}
+
+article p {
+    padding-right: 10%;
+    padding-left: 10%;
+    color: rgb(54, 54, 54);
+    text-align: justify;
+}
+
+header {
+    text-align: center;
+    font-family: 'Barlow Condensed', Black Italic;
+    text-shadow: 4px 4px 4px rgb(133, 133, 133);
+}

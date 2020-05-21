@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Bib --> Homepage </title>
+	<link href="styles/index_style.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="attachments/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:800i|Roboto:100,400&display=swap&subset=latin-ext&effect=shadow-multiple|anaglyph"
+		rel="stylesheet" type="text/css">
+</head>
+
+<nav>
+	<ul>
+		<h3>
+			<li><img class="resize" src="{{ url_for('static', filename='attachments/favicon1.png')}}" ></li>
+			<li><a href="{{ url_for('index')}}">Home</a></li>
+			<li><a href="{{ url_for('add_article')}}">Add</a></li>
+			<li><a href="{{ url_for('show_articles')}}">List</a></li>
+			<li><a href="{{ url_for('logout')}}">Log out</a></li>
+			<li><a href="{{ url_for('login')}}">Log in</a></li>
+			<li><a href="{{ url_for('register')}}">Register</a></li>
+			<li><a href="{{ url_for('change_password')}}">Zmiana hasła</a></li>
+		</h3>
+	</ul>
+</nav>
+
+<body>
+	<header>
+		<h1 class="font-effect-shadow-multiple"> Witaj w systemie Bib</h1>
+	</header>
+	<article>
+		<section>
+			<h3> Czym jest Bib? </h3>
+			<p>
+				&emsp;Bib to system zarządzania bibliografią.
+			</p>
+		</section>
+		
+
+		<section>
+			<h3> Po co?</h3>
+			<p>
+				&emsp;Menedżer bibliografii to narzędzie pomagające gromadzić i zarządzać danymi o wykorzystanych
+				materiałach
+				(artykułach, książkach, rozdziałach, stronach internetowych itp.).
+				W przyszłości można rozszerzyć go o funkcjonalności takie jak generowanie opisów bibliograficznych wg
+				wybranego standardu, wstawianie odnośników i bibliografii załącznikowej.
+			</p>
+		</section>
+		<section>
+			<h3> Aktualnie dostępne funkcjonalności </h3>
+			<table>
+				<thead>
+					<tr>
+						<td>Lp.</td>
+						<td>Nazwa</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1.</td>
+						<td>Uruchamianie za pomocą jednej komendy</td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td>Wyświetlenie statycznej strony powitalnej</td>
+					</tr>
+					<tr>
+						<td>3.</td>
+						<td>Przejście do strony formularza rejestracji nowego użytkownika</td>
+					</tr>
+					<tr>
+						<td>4.</td>
+						<td>Asynchroniczna weryfikacja dostępności nowego loginu</td>
+					</tr>
+					<tr>
+						<td>5.</td>
+						<td>Wykonanie prawidłowej rejestracji nowego użytkownika</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</article>
+</body>
+<footer>
+	<p>&copy Jakub Przygodzki, 285643 </p>
+</footer>
+
+</html>

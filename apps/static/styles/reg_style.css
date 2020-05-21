@@ -1,0 +1,35 @@
+@import "style.css";
+
+table {
+	margin-left: auto;
+    margin-right: auto;
+}
+article {
+    text-align: center !important;
+    line-height: 20px;
+    align-items: right;
+}
+
+input, select {
+    width: 80%;
+    padding: 12px 20px;
+    align-items: right !important;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    background-color: #65d899;
+  }
+
+  td:nth-child(1) {
+    width:100px;
+    text-align: right;
+}
+
+td:nth-child(2) {
+	width:600px;
+}
